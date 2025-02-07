@@ -11,7 +11,7 @@ export default function App() {
             .fill(0)
             .map(()=>({
               value: Math.ceil(Math.random() *6),
-              isHeld:true,
+              isHeld:false,
               id:nanoid()
             }))
   }
@@ -20,12 +20,20 @@ export default function App() {
     setDice(generateAllNewDice())
   }
 
+  function hold(id){
+    setDice(oldDice=> oldDice.map(
+        die=>(die.id === id 
+          ? {...die,isHeld:!die.isHeld} : die))
+    )
+  }
+
   const diceElements=dice.map(
     dieObj=> (
       <Die 
       value={dieObj.value} 
       key={dieObj.id}
       isHeld={dieObj.isHeld} 
+      hold={()=>hold(dieObj.id)}
       />
   ))
 
