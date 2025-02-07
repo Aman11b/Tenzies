@@ -1,6 +1,7 @@
 import Die from "./Components/Die"
 import { useState } from "react"
 import { nanoid } from "nanoid"
+import Confetti from 'react-confetti'
 
 export default function App() {
 
@@ -46,6 +47,7 @@ export default function App() {
 
   return (
     <main>
+      {gameWon && <Confetti />}
       <h1 className="title">Tenzies</h1>
       <p className="instruction">
         Roll until all dice are the same.Click each die to freeze it at its current value between rolls.  
