@@ -1,8 +1,20 @@
-# React + Vite
+# 🎲 Tenzies - A Simple React Game  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+A fun dice game built with React, applying key concepts like **state management, effects, refs, conditional rendering, and accessibility**.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features  
+✅ Roll dice until all match  
+✅ Click to hold/unhold dice  
+✅ Confetti celebration on win 🎉  
+✅ Accessibility improvements (aria-live, aria-labels)  
+
+## 🛠 Tech Stack  
+- React (useState, useEffect, useRef)  
+- Nanoid for unique IDs  
+- Confetti for win effect 🎉  
+
+## 💡 Acknowledgments  
+Big thanks to **Scrimba** and **Bob Ziroll** for an amazing React course!  
+
+📢 **Feedback & Contributions are Welcome!**  
